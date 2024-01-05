@@ -1,0 +1,13 @@
+route:
+  receiver: "mail"
+  repeat_interval: 4h
+  group_by: [ alertname ]
+
+receivers:
+  - name: "mail"
+    email_configs:
+      - smarthost: "imap.gmail.com:993"
+        auth_username: "engksa75@gmail.com"
+        auth_password: ""
+        from: "test@mail.com"
+        to: "test@mail.com"

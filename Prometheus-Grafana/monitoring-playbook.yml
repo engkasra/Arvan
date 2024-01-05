@@ -1,0 +1,6 @@
+- name: Install Observability stack (observer)
+  hosts: observer
+  tags:
+    - observer
+  roles:
+    - ./roles/observer
